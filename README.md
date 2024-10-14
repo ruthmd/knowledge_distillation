@@ -1,11 +1,14 @@
 # Experiments related to knowledge distillation
 
-Dataset: CIFAR-10
-Base Code: [PyTorch Knowledge Distillation Tutorial](https://pytorch.org/tutorials/beginner/knowledge_distillation_tutorial.html)
+#### Original Paper: [Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531)
 
-Accuracy by varing Temperature
+#### Base Code: [PyTorch Knowledge Distillation Tutorial](https://pytorch.org/tutorials/beginner/knowledge_distillation_tutorial.html)
 
-| Temperature (T)   | Teacher accuracy (%) | Student accuracy without teacher (%) | Student accuracy with CE + KD (%) | Student accuracy with CE + CosineLoss (%) | Student accuracy with CE + RegressorMSE (%) |
+#### Dataset: CIFAR-10
+
+## Accuracy by varing Temperature
+
+| Temperature (T)   | Teacher accuracy (%) | Student accuracy without teacher (%) | Student accuracy with XE + KD (%) | Student accuracy with XE + CosineLoss (%) | Student accuracy with XE + RegressorMSE (%) |
 |------|----------------------|--------------------------------------|-----------------------------------|--------------------------------------------|----------------------------------------------|
 | 0.5  | 75.49                | 70.31                                | 70.33                             | 70.78                                      | 70.94                                        |
 | 2.0  | 75.49                | 70.31                                | 70.71                             | 70.48                                      | 71.20                                        |
